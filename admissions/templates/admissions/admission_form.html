@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Letter for {{ student.first_name }} {{ student.last_name }}</title>
+    <style>
+        body {
+            font-family: serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .letter-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        .admission-details {
+            background-color: #ecf0f1;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .admission-details p {
+            margin: 5px 0;
+        }
+        .print-button {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .print-button button {
+            padding: 12px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .print-button button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body >
+
+    <div class="letter-container">
+        
+
+        
+
+        <div class=WordSection1>
+
+            <p class=MsoNormal style='line-height:normal'><b style='mso-bidi-font-weight:
+            normal'><span style='font-size:16.0pt;font-family:"Bookman Old Style",serif;
+            color:red'><o:p>&nbsp;</o:p></span></b></p>
+            
+            <p class=MsoNormal style='line-height:normal;tab-stops:176.25pt'><b
+            style='mso-bidi-font-weight:normal'><span style='font-size:16.0pt;font-family:
+            "Bookman Old Style",serif;color:red'><span style='mso-tab-count:1'>                                  </span><o:p></o:p></span></b></p>
+            
+            <p class=MsoNormal style='line-height:normal'><b style='mso-bidi-font-weight:
+            normal'><span style='font-size:16.0pt;font-family:"Bookman Old Style",serif;
+            color:red'><o:p>&nbsp;</o:p></span></b></p>
+            
+            <p class=MsoNormal style='line-height:normal'><b style='mso-bidi-font-weight:
+            normal'><span style='font-size:12.0pt;font-family:"Bookman Old Style",serif'><o:p>&nbsp;</o:p></span></b></p>
+            
+            <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b
+            style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:
+            "Bookman Old Style",serif'>Office of the Academic Registrar<o:p></o:p></span></b></p>
+         
+            
+            <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'>Date:<span
+            style='mso-spacerun:yes'>                   </span><span
+            style='mso-spacerun:yes'>                  </span><span
+            style='mso-spacerun:yes'> </span><span style='mso-spacerun:yes'> </span><span
+            style='mso-spacerun:yes'> </span>:17/01/2025<o:p></o:p></span></b></p>
+            
+            <p class=MsoNormal style='text-align:justify;line-height:normal'><b
+            style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:12.0pt;
+            font-family:"Bookman Old Style",serif;mso-bidi-font-family:"Times New Roman"'>NAME:<span
+            style='mso-spacerun:yes'>                                </span><span
+            style='mso-spacerun:yes'>   </span><span style='mso-spacerun:yes'> </span><span
+            class=GramE><span style='mso-spacerun:yes'> </span><span
+            style='mso-spacerun:yes'> </span>:</span> <span class=SpellE>{{ student.first_name }} </span>
+            {{ student.last_name }}<o:p></o:p></span></b></p>
+            
+            <p class=MsoNormal style='text-align:justify;line-height:normal'><b><span
+            style='mso-bidi-font-size:12.0pt;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'>ACADEMIC YEAR <span style='mso-tab-count:
+            2'>           </span><span style='mso-spacerun:yes'> </span><span
+            style='mso-tab-count:1'>         </span>:<span style='mso-spacerun:yes'>  
+            </span>{{ student.year_of_admission }}<o:p></o:p></span></b></p>
+            
+            <p class=MsoNormal style='text-align:justify;line-height:normal'><b><span
+            style='mso-bidi-font-size:12.0pt;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'>PROGRAM OF STUDY <span
+            style='mso-tab-count:2'>              </span>:<span style='mso-spacerun:yes'>  
+            </span>CERTIFICATE IN {{ student.course.name }}<o:p></o:p></span></b></p>
+            
+            <p class=MsoNormal style='text-align:justify;line-height:normal;tab-stops:.5in 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in right 6.5in'><b><span
+            style='mso-bidi-font-size:12.0pt;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'>DURATION<span style='mso-tab-count:
+            4'>                               </span>:<span style='mso-spacerun:yes'>   
+            </span>2 ½ YEARS <span style='mso-tab-count:1'>                                                     </span><o:p></o:p></span></b></p>
+            
+            <p class=MsoNormal style='text-align:justify;line-height:normal'><b><span
+            style='mso-bidi-font-size:12.0pt;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'>REPORTING DATE <span style='mso-tab-count:
+            2'>                   </span>:<span style='mso-spacerun:yes'>     </span style="color:#000;">{{ student.reporting }}
+</span></b></p>{{ student.course.reporting }}
+            
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal;tab-stops:.5in 1.0in 1.5in 2.0in 2.5in 3.0in 295.5pt'><b><span
+            style='mso-bidi-font-size:12.0pt;font-family:"Bookman Old Style",serif'>Dear, Mike<o:p></o:p></span></b></p>
+            
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal;tab-stops:.5in 1.0in 1.5in 2.0in 2.5in 3.0in 295.5pt'><b><span
+            style='mso-bidi-font-size:12.0pt;font-family:"Bookman Old Style",serif'><o:p>&nbsp;</o:p></span></b></p>
+            
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+            justify;line-height:normal;tab-stops:4.5pt 225.0pt'><b style='mso-bidi-font-weight:
+            normal'><span style='mso-bidi-font-size:12.0pt;font-family:"Bookman Old Style",serif'>ADMISSION
+            TO A CERTIFICATE PROGRAMME LEADING TO THE AWARD OF CERTIFICATE IN NURSING<o:p></o:p></span></b></p>
+            
+
+            
+            <p class=MsoNormal style='text-align:justify;line-height:normal'><span
+            style='mso-bidi-font-size:12.0pt;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'>I write to offer you a place as a
+            resident student at Kisoro Institute of Health Sciences for the;<span
+            style='mso-spacerun:yes'>                           </span> <o:p></o:p></span></p>
+            
+            <p class=MsoNormal style='text-align:justify'><span style='mso-bidi-font-size:
+            12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>This offer of admission expires upon failure to show up
+            within 30 days from the day of reporting.<o:p></o:p></span></p>
+            
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+            justify'><b style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:
+            12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>REGISTRATION <o:p></o:p></span></b></p>
+            
+            <p class=MsoNormal style='text-align:justify'><span style='mso-bidi-font-size:
+            12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>This is the provisional offer made on the basis of the
+            statement of your qualification as presented on your application form. It is
+            subject to the satisfactory verification of those qualifications by the office
+            of the academic registrar at the time of registration and upon verification my
+            MOE. <o:p></o:p></span></p>
+            
+            <p class=MsoNormal style='text-align:justify'><span style='mso-bidi-font-size:
+            12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>For the purpose of registration, you must bring with you the
+            following <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpFirst style=' margin-left: 40px; text-align:justify;text-indent:-.5in;
+            mso-text-indent-alt:-.25in;mso-list:l0 level1 lfo1'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>i.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>Original UCE certificates plus three photocopies.<o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='margin-left: 40px; text-align:justify;text-indent:-.5in;
+            mso-text-indent-alt:-.25in;mso-list:l0 level1 lfo1'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+            </span>ii.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>Three plastic spring files <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='margin-left: 40px; text-align:justify;text-indent:-.5in;
+            mso-text-indent-alt:-.25in;mso-list:l0 level1 lfo1'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'><span style='font:7.0pt "Times New Roman"'>&nbsp; </span>iii.<span
+            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>Four (4) colored passport size photographs with a white
+            background showing your current likeness (head, ears and shoulders). <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpLast style='margin-left: 40px; text-align:justify;text-indent:-.5in;
+            mso-text-indent-alt:-.25in;mso-list:l0 level1 lfo1'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+            </span>iv.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>An identity card from the previous school/college. <o:p></o:p></span></p>
+            
+            <p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+            normal'><span style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+            "Bookman Old Style",serif;mso-bidi-font-family:"Times New Roman"'>NOTE</span></b><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'>: Cases of Impersonation, falsification
+            of documents whenever discovered either at registration or afterwards will lead
+            to automatic cancellation of admission.<o:p></o:p></span></p>
+            
+            <p class=MsoNormal style='text-align:justify'><b><span style='mso-bidi-font-size:
+            12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'><o:p>&nbsp;</o:p></span></b></p>
+            
+            <p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+            normal'><span style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+            "Bookman Old Style",serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></b></p>
+            
+            <p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+            normal'><span style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+            "Bookman Old Style",serif;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></b></p>
+            
+            <p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+            normal'><span style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+            "Bookman Old Style",serif;mso-bidi-font-family:"Times New Roman"'>LIST OF TEXT
+            BOOKS FOR SCHOOL LIBRARY <o:p></o:p></span></b></p>
+            
+            <p class=MsoNormal style='text-align:justify'><span style='mso-bidi-font-size:
+            12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>You <b style='mso-bidi-font-weight:normal'>MUST</b> come
+            with one of the marked text book for the school library on reporting as they
+            are available in Kampala bookshop e.g. <span class=SpellE>Emperasa</span>
+            solution Limited in <span class=SpellE>Kyambogo</span>, opposite driving permit
+            Face Technology Center, <span class=SpellE>Aristock</span> bookshop, and
+            Diamond trust in Kampala &amp; <span class=SpellE>Gustro</span> bookshop along
+            Sir Apollo <span class=SpellE>Kagwa</span> Road. The text book can be: <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpFirst style='text-align:justify;text-indent:-.25in;
+            mso-list:l2 level1 lfo2'><![if !supportLists]><span style='mso-bidi-font-size:
+            12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;mso-fareast-font-family:
+            "Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><b style='mso-bidi-font-weight:normal'><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'>Introduction to Anatomy and physiology
+            or healthcare students. By Sturgeon</span></b><span style='mso-bidi-font-size:
+            12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>. <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='margin-top:12.0pt;mso-add-space:
+            auto;text-align:justify;text-indent:-.25in;mso-list:l2 level1 lfo2'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><b style='mso-bidi-font-weight:normal'><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'>Nursing procedures manual book.
+            (compulsory</span></b><span style='mso-bidi-font-size:12.0pt;line-height:115%;
+            font-family:"Bookman Old Style",serif;mso-bidi-font-family:"Times New Roman"'>)<b
+            style='mso-bidi-font-weight:normal'> for personal use</b><o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;
+            mso-list:l2 level1 lfo2'><![if !supportLists]><span style='mso-bidi-font-size:
+            12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;mso-fareast-font-family:
+            "Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>Palliative medicine. <span style='mso-tab-count:2'>          </span><span
+            style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;
+            mso-list:l2 level1 lfo2'><![if !supportLists]><b style='mso-bidi-font-weight:
+            normal'><span style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+            "Bookman Old Style",serif;mso-fareast-font-family:"Bookman Old Style";
+            mso-bidi-font-family:"Bookman Old Style"'><span style='mso-list:Ignore'>4.<span
+            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span></b><![endif]><b
+            style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>Text book for midwives by Myles 16 1 Edition. <o:p></o:p></span></b></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;
+            mso-list:l2 level1 lfo2'><![if !supportLists]><span style='mso-bidi-font-size:
+            12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;mso-fareast-font-family:
+            "Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>Acute and critical care in Adult Nursing by Desi Tait<o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;
+            mso-list:l2 level1 lfo2'><![if !supportLists]><span style='mso-bidi-font-size:
+            12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;mso-fareast-font-family:
+            "Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'><span style='mso-spacerun:yes'> </span></span><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;mso-hansi-font-family:"Bookman Old Style";
+            mso-bidi-font-family:"Times New Roman"'>Social Psychology</span><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'> for nurses <span style='mso-tab-count:
+            1'> </span><span style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;
+            mso-list:l2 level1 lfo2'><![if !supportLists]><span style='mso-bidi-font-size:
+            12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;mso-fareast-font-family:
+            "Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>Essentials of nursing practice edited by Catherine Delves <span
+            class=SpellE>Jates</span>.<o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;
+            mso-list:l2 level1 lfo2'><![if !supportLists]><span style='mso-bidi-font-size:
+            12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;mso-fareast-font-family:
+            "Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>Immunization in practice Uganda 3rd Edition (2017) <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;
+            mso-list:l2 level1 lfo2'><![if !supportLists]><span style='mso-bidi-font-size:
+            12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;mso-fareast-font-family:
+            "Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>Gynecology by ten teachers. <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;mso-list:l2 level1 lfo2'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>10.<span style='font:7.0pt "Times New Roman"'> </span></span></span><![endif]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'>Pediatric Nursing procedures 41h
+            Edition by Vicky. R. <span class=SpellE>Bowdex</span>. <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;mso-list:l2 level1 lfo2'><![if !supportLists]><b
+            style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-fareast-font-family:
+            "Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>11.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span></b><![endif]><b
+            style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>Medicine for Nurses by SN chough. <o:p></o:p></span></b></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;mso-list:l2 level1 lfo2'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>12.<span style='font:7.0pt "Times New Roman"'> </span></span></span><![endif]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'>An introduction to community and
+            primary health care. By Diana <span class=SpellE>Guzys</span> 2<sup>nd</sup>
+            Edition. <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;mso-list:l2 level1 lfo2'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>13.<span style='font:7.0pt "Times New Roman"'> </span></span></span><![endif]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'>Essentials of psychiatric Nursing by
+            Many Ann Boyd. <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;mso-list:l2 level1 lfo2'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>14.<span style='font:7.0pt "Times New Roman"'> </span></span></span><![endif]><span
+            class=SpellE><span style='mso-bidi-font-size:12.0pt;line-height:115%;
+            font-family:"Bookman Old Style",serif;mso-bidi-font-family:"Times New Roman"'>Moroney</span></span><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'> surgery Courses 17<sup>th</sup>
+            Edition. <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;mso-list:l2 level1 lfo2'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>15.<span style='font:7.0pt "Times New Roman"'> </span></span></span><![endif]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'>Human Anatomy by Vander graft. <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;mso-list:l2 level1 lfo2'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>16.<span style='font:7.0pt "Times New Roman"'> </span></span></span><![endif]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'>Palliative care nursing b) Marianne
+            matzo. <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;mso-list:l2 level1 lfo2'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>17.<span style='font:7.0pt "Times New Roman"'> </span></span></span><![endif]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'>Environmental health and occupation
+            health and safety b) Samuel <span class=SpellE>Obura</span> <span class=SpellE>Atubwa</span>
+            and <span class=SpellE>Mutuku</span>. Alexander <span class=SpellE>Mwanthi</span>
+            (2014). <o:p></o:p></span></p>
+
+            <p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in;mso-list:l2 level1 lfo2'><![if !supportLists]><span
+                style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+                mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+                style='mso-list:Ignore'>18.<span style='font:7.0pt "Times New Roman"'> </span></span></span><![endif]><span
+                style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+                mso-bidi-font-family:"Times New Roman"'>Palliative care in oncology by Bern Alt Epping<span class=SpellE>Obura</span> <span class=SpellE>Atubwa</span>
+                and <span class=SpellE>Mutuku</span>. Alexander <span class=SpellE>Triedemam</span> <span class=SpellE>Nauck</span> (springer). <o:p></o:p></span></b></p>
+            
+            
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><b
+            style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>PERSONAL REQUIREMENTS TO BE CHECKED ON REPORTING. <o:p></o:p></span></b></p>
+            
+            </div>
+            
+            <span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;line-height:115%;
+            font-family:"Bookman Old Style",serif;mso-fareast-font-family:Calibri;
+            mso-bidi-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+            EN-US;mso-bidi-language:AR-SA'><br clear=all style='page-break-before:auto;
+            mso-break-type:section-break'>
+            </span>
+            
+            <div class=WordSection2>
+            
+            <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0in;margin-bottom:
+            .0001pt;mso-add-space:auto;text-indent:-.25in;mso-list:l1 level1 lfo3'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>a)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>Clinical thermometer <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0in;margin-bottom:
+            .0001pt;mso-add-space:auto;text-indent:-.25in;mso-list:l1 level1 lfo3'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>b)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>BP machine <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0in;margin-bottom:
+            .0001pt;mso-add-space:auto;text-indent:-.25in;mso-list:l1 level1 lfo3'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>c)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>One (l) box of surgical gloves <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0in;margin-bottom:
+            .0001pt;mso-add-space:auto;text-indent:-.25in;mso-list:l1 level1 lfo3'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>d)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>One (l) box of examination gloves <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0in;margin-bottom:
+            .0001pt;mso-add-space:auto;text-indent:-.25in;mso-list:l1 level1 lfo3'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>e)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>Stethoscope <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0in;margin-bottom:
+            .0001pt;mso-add-space:auto;text-indent:-.25in;mso-list:l1 level1 lfo3'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>f)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>Fetal scope (midwives) <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0in;margin-bottom:
+            .0001pt;mso-add-space:auto;text-indent:-.25in;mso-list:l1 level1 lfo3'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>g)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>Nurse' s scissor <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0in;margin-bottom:
+            .0001pt;mso-add-space:auto;text-indent:-.25in;mso-list:l1 level1 lfo3'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>h)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>Nurses watch <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0in;margin-bottom:
+            .0001pt;mso-add-space:auto;text-indent:-.25in;mso-list:l1 level1 lfo3'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>i)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>Tape measure <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0in;margin-bottom:
+            .0001pt;mso-add-space:auto;text-indent:-.25in;mso-list:l1 level1 lfo3'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>j)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>Blanket. two (2) pairs of bed sheets, mattress and pillow <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0in;margin-bottom:
+            .0001pt;mso-add-space:auto;text-indent:-.25in;mso-list:l1 level1 lfo3'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>k)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>Enough descent clothes <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0in;margin-bottom:
+            .0001pt;mso-add-space:auto;text-indent:-.25in;mso-list:l1 level1 lfo3'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>l)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>Two pairs of Hat shoes black or brown <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0in;margin-bottom:
+            .0001pt;mso-add-space:auto;text-indent:-.25in;mso-list:l1 level1 lfo3'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>m)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'>Gumboots (color white) <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0in;margin-bottom:
+            .0001pt;mso-add-space:auto;text-indent:-.25in;mso-list:l1 level1 lfo3'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>n)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>Basin, Jerri can, buckets <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0in;margin-bottom:
+            .0001pt;mso-add-space:auto;text-indent:-.25in;mso-list:l1 level1 lfo3'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>o)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>A torch <o:p></o:p></span></p>
+            
+            <p class=MsoListParagraphCxSpLast style='margin-bottom:0in;margin-bottom:.0001pt;
+            mso-add-space:auto;text-indent:-.25in;mso-list:l1 level1 lfo3'><![if !supportLists]><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-fareast-font-family:"Bookman Old Style";mso-bidi-font-family:"Bookman Old Style"'><span
+            style='mso-list:Ignore'>p)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+            </span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>Enough books (minimum of 8-4quire<o:p></o:p></span></p>
+            
+            </div>
+            
+            <span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;line-height:115%;
+            font-family:"Bookman Old Style",serif;mso-fareast-font-family:Calibri;
+            mso-bidi-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+            EN-US;mso-bidi-language:AR-SA'><br clear=all style='page-break-before:auto;
+            mso-break-type:section-break'>
+            </span>
+            
+            <div class=WordSection3>
+            
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'><span style='mso-spacerun:yes'>    
+            </span>Q) a ream papers<o:p></o:p></span></p>
+            
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'><span style='mso-spacerun:yes'>    
+            </span>R) 6 rolls of toilet paper big<o:p></o:p></span></p>
+            
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+            
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
+            class=SpellE><span style='mso-bidi-font-size:12.0pt;line-height:115%;
+            font-family:"Bookman Old Style",serif;mso-bidi-font-family:"Times New Roman"'>Uwimana</span></span><span
+            style='mso-bidi-font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'> <span class=SpellE>Berinah</span><o:p></o:p></span></p>
+            
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><o:p>&nbsp;</o:p></p>
+            
+            <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><v:shapetype
+             id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+             path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+             <v:stroke joinstyle="miter"/>
+             <v:formulas>
+              <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+              <v:f eqn="sum @0 1 0"/>
+              <v:f eqn="sum 0 0 @1"/>
+              <v:f eqn="prod @2 1 2"/>
+              <v:f eqn="prod @3 21600 pixelWidth"/>
+              <v:f eqn="prod @3 21600 pixelHeight"/>
+              <v:f eqn="sum @0 0 1"/>
+              <v:f eqn="prod @6 1 2"/>
+              <v:f eqn="prod @7 21600 pixelWidth"/>
+              <v:f eqn="sum @8 21600 0"/>
+              <v:f eqn="prod @7 21600 pixelHeight"/>
+              <v:f eqn="sum @10 21600 0"/>
+             </v:formulas>
+             <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+             <o:lock v:ext="edit" aspectratio="t"/>
+            </v:shapetype><v:shape id="Picture_x0020_5" o:spid="_x0000_s1028" type="#_x0000_t75"
+             style='position:absolute;margin-left:1in;margin-top:623.55pt;width:68.2pt;
+             height:50.4pt;z-index:-251653120;visibility:visible;mso-wrap-style:square;
+             mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:0;
+             mso-wrap-distance-top:0;mso-wrap-distance-right:0;mso-wrap-distance-bottom:0;
+             mso-position-horizontal:absolute;mso-position-horizontal-relative:margin;
+             mso-position-vertical:absolute;mso-position-vertical-relative:text;
+             mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+             mso-height-relative:page'>
+             <v:imagedata src="NURSING%20ADMISSION%202_files/image001.emz" o:title=""
+              grayscale="t" bilevel="t"/>
+             <o:lock v:ext="edit" aspectratio="f"/>
+             <w:wrap anchorx="margin"/>
+            </v:shape><v:shape id="Picture_x0020_4" o:spid="_x0000_s1027" type="#_x0000_t75"
+             style='position:absolute;margin-left:1in;margin-top:623.55pt;width:68.2pt;
+             height:50.4pt;z-index:-251654144;visibility:visible;mso-wrap-style:square;
+             mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:0;
+             mso-wrap-distance-top:0;mso-wrap-distance-right:0;mso-wrap-distance-bottom:0;
+             mso-position-horizontal:absolute;mso-position-horizontal-relative:margin;
+             mso-position-vertical:absolute;mso-position-vertical-relative:text;
+             mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+             mso-height-relative:page'>
+             <v:imagedata src="NURSING%20ADMISSION%202_files/image001.emz" o:title=""
+              grayscale="t" bilevel="t"/>
+             <o:lock v:ext="edit" aspectratio="f"/>
+             <w:wrap anchorx="margin"/>
+            </v:shape><b style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:
+            12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman"'>ACADEMI</span></b><b style='mso-bidi-font-weight:normal'><span
+            style='font-size:12.0pt;line-height:115%;font-family:"Bookman Old Style",serif;
+            mso-bidi-font-family:"Times New Roman"'>C REGISTRAR<o:p></o:p></span></b></p>
+            
+            <p class=MsoNormal><v:shape id="Picture_x0020_20" o:spid="_x0000_s1026" type="#_x0000_t75"
+             style='position:absolute;margin-left:31.45pt;margin-top:3.55pt;width:68.2pt;
+             height:50.4pt;z-index:-251639808;visibility:visible;mso-wrap-style:square;
+             mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:0;
+             mso-wrap-distance-top:0;mso-wrap-distance-right:0;mso-wrap-distance-bottom:0;
+             mso-position-horizontal:absolute;mso-position-horizontal-relative:margin;
+             mso-position-vertical:absolute;mso-position-vertical-relative:text;
+             mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+             mso-height-relative:page'>
+             <v:imagedata src="NURSING%20ADMISSION%202_files/image001.emz" o:title=""
+              grayscale="t" bilevel="t"/>
+             <o:lock v:ext="edit" aspectratio="f"/>
+             <w:wrap anchorx="margin"/>
+            </v:shape><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+            line-height:115%;font-family:"Bookman Old Style",serif;mso-bidi-font-family:
+            "Times New Roman";mso-no-proof:yes'><span style='mso-tab-count:1'>          </span></span></b></p>
+            
+            </div>
+    </div>
+
+
+    <div class="print-button">
+        <button onclick="window.print()">Print Admission Letter</button>
+    </div>
+
+    <script type="text/javascript">
+        function openAdmissionForm(url) {
+            var iframe = document.createElement('iframe');
+            iframe.src = url;
+            iframe.style.width = '100%';
+            iframe.style.height = '600px';
+            iframe.style.border = 'none';
+            iframe.setAttribute('frameborder', '0');
+    
+            // Check if the iframe exists, if not, create and append it
+            var iframeContainer = document.getElementById('admission-form-container');
+            if (!iframeContainer) {
+                iframeContainer = document.createElement('div');
+                iframeContainer.id = 'admission-form-container';
+                iframeContainer.style.marginTop = '20px';
+                iframeContainer.style.padding = '20px';
+                iframeContainer.style.border = '1px solid #ddd';
+                iframeContainer.style.backgroundColor = '#fff';
+                document.body.appendChild(iframeContainer);
+            }
+            iframeContainer.innerHTML = '';  // Clear existing content
+            iframeContainer.appendChild(iframe);
+        }
+    </script>
+
+</body>
+</html>
